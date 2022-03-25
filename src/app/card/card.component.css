@@ -4,16 +4,20 @@
   -moz-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.3);
   cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  border-radius: 1px 1px 0 0;
 }
 .card-wrapper:hover {
   -webkit-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.6);
   box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.6);
   transform: translateY(3px);
+  transition: all 0.15s ease-in-out;
 }
 .card-wrapper img {
   max-width: 100%;
   height: auto;
+  border-radius: 1px 1px 0 0;
 }
 .card-infobox {
   padding: 20px 0 0 16px;

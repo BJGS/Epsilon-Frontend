@@ -3,6 +3,9 @@
 /* Google Font SANS PRO */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
 
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 14px;
