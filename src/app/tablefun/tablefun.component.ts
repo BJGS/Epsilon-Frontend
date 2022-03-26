@@ -16,6 +16,11 @@ export class TableFunComponent implements OnInit {
   ngOnInit() {
     this.tablefunservice.getTabledata().subscribe((resData) => {
       this.tableData = resData;
+      console.log(
+        resData.cookies.map((res) => {
+          return res.name;
+        })
+      );
     });
   }
 }

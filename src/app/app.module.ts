@@ -7,6 +7,7 @@ import { CardComponent } from './card/card.component';
 import { FormeleComponent } from './formele/formele.component';
 import { TableFunComponent } from './tablefun/tablefun.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SortDirective } from './shared/sort.directive';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, HttpClientModule],
@@ -15,6 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
     CardComponent,
     FormeleComponent,
     TableFunComponent,
+    SortDirective,
   ],
   bootstrap: [AppComponent],
 })
