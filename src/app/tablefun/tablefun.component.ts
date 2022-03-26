@@ -8,7 +8,7 @@ import { TablefunService } from './tablefun.service';
   styleUrls: ['./tablefun.component.css'],
 })
 export class TableFunComponent implements OnInit {
-  tableData: TablefunModel;
+  tableData: TablefunModel = { cookies: [] };
   sortOrder: string = null;
   activeindex: number;
   constructor(private tablefunservice: TablefunService) {}
