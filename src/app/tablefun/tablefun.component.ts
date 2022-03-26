@@ -10,7 +10,7 @@ import { TablefunService } from './tablefun.service';
 export class TableFunComponent implements OnInit {
   tableTitle = ['Product Name', 'Price', 'Category'];
   tableData: TablefunModel;
-
+  sortOrder: string = null;
   constructor(private tablefunservice: TablefunService) {}
 
   ngOnInit() {
@@ -22,5 +22,11 @@ export class TableFunComponent implements OnInit {
         })
       );
     });
+  }
+
+  sort(order: string) {
+    this.sortOrder = order;
+    console.log('or', order);
+    console.log('sortvar', this.sortOrder);
   }
 }
