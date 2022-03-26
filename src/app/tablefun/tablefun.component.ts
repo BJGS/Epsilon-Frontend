@@ -17,16 +17,9 @@ export class TableFunComponent implements OnInit {
     this.tablefunservice.getTabledata().subscribe((resData) => {
       this.tableData = resData;
     });
-    console.log('sortvar', this.sortOrder);
   }
 
-  sortActive(no: number) {
-    this.activeindex = no;
-    console.log('active', this.activeindex);
-    if (this.sortOrder == 'asc') {
-      this.sortOrder = 'desc';
-    } else {
-      this.sortOrder = 'asc';
-    }
+  sortActive(activeIndex: number) {
+    this.activeindex = activeIndex;
   }
 }
