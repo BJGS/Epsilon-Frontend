@@ -64,3 +64,18 @@
 .sort-block span:hover {
   color: #0063e6;
 }
+
+.active.desc .sort-desc,
+.active.asc .sort-asc {
+  display: none;
+}
+.active.asc .sort-desc {
+  bottom: 43%;
+  transform: translateY(50%);
+  color: #0063e6;
+}
+.active.desc .sort-asc {
+  top: 43%;
+  transform: translateY(-50%);
+  color: #0063e6;
+}

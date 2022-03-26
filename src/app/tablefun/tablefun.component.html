@@ -2,21 +2,39 @@
   <table class="table">
     <thead>
       <tr>
-        <th [appSort]="tableData.cookies" data-name="name" data-order="asc">
+        <th
+          [appSort]="tableData.cookies"
+          data-name="name"
+          data-order="asc"
+          (click)="sortActive(0)"
+          [ngClass]="activeindex === 0 ? 'active' : ''"
+        >
           Product Name
           <span class="sort-block">
             <span class="sort-asc"></span>
             <span class="sort-desc"></span>
           </span>
         </th>
-        <th [appSort]="tableData.cookies" data-name="price" data-order="asc">
+        <th
+          [appSort]="tableData.cookies"
+          data-name="price"
+          data-order="asc"
+          (click)="sortActive(1)"
+          [ngClass]="activeindex === 1 ? 'active' : ''"
+        >
           Price
           <span class="sort-block">
             <span class="sort-asc"></span>
             <span class="sort-desc"></span>
           </span>
         </th>
-        <th [appSort]="tableData.cookies" data-name="category" data-order="asc">
+        <th
+          [appSort]="tableData.cookies"
+          data-name="category"
+          data-order="asc"
+          (click)="sortActive(2)"
+          [ngClass]="activeindex === 2 ? 'active' : ''"
+        >
           Category
           <span class="sort-block">
             <span class="sort-asc"></span>

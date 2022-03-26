@@ -10,6 +10,7 @@ import { TablefunService } from './tablefun.service';
 export class TableFunComponent implements OnInit {
   tableData: TablefunModel;
   sortOrder: string = null;
+  activeindex: number;
   constructor(private tablefunservice: TablefunService) {}
 
   ngOnInit() {
@@ -19,7 +20,9 @@ export class TableFunComponent implements OnInit {
     console.log('sortvar', this.sortOrder);
   }
 
-  sort() {
+  sortActive(no: number) {
+    this.activeindex = no;
+    console.log('active', this.activeindex);
     if (this.sortOrder == 'asc') {
       this.sortOrder = 'desc';
     } else {
