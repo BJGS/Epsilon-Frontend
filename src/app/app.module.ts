@@ -6,9 +6,10 @@ import { AppComponent } from './app.component';
 import { CardComponent } from './card/card.component';
 import { FormeleComponent } from './formele/formele.component';
 import { TableFunComponent } from './tablefun/tablefun.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, HttpClientModule],
   declarations: [
     AppComponent,
     CardComponent,

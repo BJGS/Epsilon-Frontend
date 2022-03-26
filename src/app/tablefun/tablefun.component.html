@@ -12,25 +12,10 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>$Product Name</td>
-        <td>$Price</td>
-        <td>Category</td>
-      </tr>
-      <tr>
-        <td>$Product Name</td>
-        <td>$Price</td>
-        <td>$Category</td>
-      </tr>
-      <tr>
-        <td>$Product Name</td>
-        <td>$Price</td>
-        <td>$Category</td>
-      </tr>
-      <tr>
-        <td>$Product Name</td>
-        <td>$Price</td>
-        <td>$Category</td>
+      <tr *ngFor="let tabledata of tableData.cookies">
+        <td>{{ tabledata.name }}</td>
+        <td>{{ tabledata.price }}</td>
+        <td>{{ tabledata.category }}</td>
       </tr>
     </tbody>
   </table>
