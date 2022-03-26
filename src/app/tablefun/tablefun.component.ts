@@ -8,7 +8,6 @@ import { TablefunService } from './tablefun.service';
   styleUrls: ['./tablefun.component.css'],
 })
 export class TableFunComponent implements OnInit {
-  tableTitle = ['Product Name', 'Price', 'Category'];
   tableData: TablefunModel;
   sortOrder: string = null;
   constructor(private tablefunservice: TablefunService) {}
@@ -20,9 +19,11 @@ export class TableFunComponent implements OnInit {
     console.log('sortvar', this.sortOrder);
   }
 
-  sort(order: string) {
-    this.sortOrder = order;
-    console.log('or', order);
-    console.log('sortvar', this.sortOrder);
+  sort() {
+    if (this.sortOrder == 'asc') {
+      this.sortOrder = 'desc';
+    } else {
+      this.sortOrder = 'asc';
+    }
   }
 }
