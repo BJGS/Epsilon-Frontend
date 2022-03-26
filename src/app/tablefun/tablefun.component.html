@@ -2,21 +2,25 @@
   <table class="table">
     <thead>
       <tr>
-        <th *ngFor="let title of tableTitle">
-          {{ title }}
+        <th [appSort]="tableData.cookies" data-name="name" data-order="asc">
+          Product Name
           <span class="sort-block">
-            <span
-              class="sort-asc"
-              [appSort]="tableData.cookies"
-              data-name="name"
-              data-order="asc"
-            ></span>
-            <span
-              class="sort-desc"
-              [appSort]="tableData.cookies"
-              data-name="name"
-              data-order="desc"
-            ></span>
+            <span class="sort-asc"></span>
+            <span class="sort-desc"></span>
+          </span>
+        </th>
+        <th [appSort]="tableData.cookies" data-name="price" data-order="asc">
+          Price
+          <span class="sort-block">
+            <span class="sort-asc"></span>
+            <span class="sort-desc"></span>
+          </span>
+        </th>
+        <th [appSort]="tableData.cookies" data-name="category" data-order="asc">
+          Category
+          <span class="sort-block">
+            <span class="sort-asc"></span>
+            <span class="sort-desc"></span>
           </span>
         </th>
       </tr>
