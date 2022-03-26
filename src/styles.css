@@ -19,6 +19,13 @@ body {
 .pull-left {
   float: left;
 }
-.col-75 {
-  width: 75%;
+.col-35 {
+  width: 35%;
+}
+
+.col-40 {
+  width: 40%;
+}
+.m-l-1 {
+  margin-left: 1%;
 }
